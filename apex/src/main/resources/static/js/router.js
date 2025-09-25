@@ -23,7 +23,7 @@ async function render(route) {
         app.innerHTML = "<h2 style='padding:24px'>페이지를 불러오지 못했습니다.</h2>";
         console.error(e);
     }
-
+0
 }
 
 function setActiveLink(route) {
