@@ -1,6 +1,10 @@
 const routes = {
     "/" : "fragments/home",
-    "/about-us" : "fragments/about-us"
+    "/about-us" : "fragments/about_us",
+    "/our-business" : "fragments/our_business",
+    "/portfolio" : "fragments/portfolio",
+    "/news" : "fragments/news",
+    "/contact" : "fragments/contact",
 }
 
 const app = document.getElementById("main-con");
@@ -23,7 +27,6 @@ async function render(route) {
         app.innerHTML = "<h2 style='padding:24px'>페이지를 불러오지 못했습니다.</h2>";
         console.error(e);
     }
-0
 }
 
 function setActiveLink(route) {

@@ -16,11 +16,11 @@
             
             <!-- 네비게이션 메뉴 -->
             <nav class="header-nav">
-                <a href="#" class="nav-link" data-route="/">About Us</a>
-                <a href="#" class="nav-link" data-route="/our-business">Our Business</a>
-                <a href="#" class="nav-link" data-route="/portfolio">Future & Portfolio</a>
-                <a href="#" class="nav-link" data-route="/news">News & Insights</a>
-                <a href="#" class="nav-link" data-route="/contact">Contact</a>
+                <a href="/about-us" class="nav-link" data-route="/">About Us</a>
+                <a href="/our-business" class="nav-link" data-route="/our-business">Our Business</a>
+                <a href="/portfolio" class="nav-link" data-route="/portfolio">Future & Portfolio</a>
+                <a href="/news" class="nav-link" data-route="/news">News & Insights</a>
+                <a href="/contact" class="nav-link" data-route="/contact">Contact</a>
             </nav>
             
             <!-- 언어 선택기 -->

@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/main.css">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/sub.css">
-    <title>APEX</title>
+    <title><c:choose>
+        <c:when test="${not empty pageTitle}">${pageTitle} - APEX</c:when>
+        <c:otherwise>APEX</c:otherwise>
+    </c:choose></title>
 </head>
 <body>
     <header id="header">
@@ -15,7 +18,6 @@
     </header>
     
     <main id="main-con">
-        
     </main>
     
     <footer id="footer">

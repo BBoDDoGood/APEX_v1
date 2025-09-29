@@ -25,7 +25,7 @@ public class HomeController {
 
     @GetMapping("/")
     public String home(HttpServletRequest request, HttpServletResponse response) {
-        return "home";
+        return "layout";
     }
 
     @PostMapping("/api/change-language")
@@ -48,27 +48,27 @@ public class HomeController {
 
     @GetMapping("/about-us")
     public String aboutUs() {
-        return "about_us";
+        return "layout";
     }
     
     @GetMapping("/our-business")
     public String ourBusiness() {
-        return "our_business";
+        return "layout";
     }
     
     @GetMapping("/portfolio")
     public String portfolio() {
-        return "portfolio";
+        return "layout";
     }
     
     @GetMapping("/news")
     public String news() {
-        return "news";
+        return "layout";
     }
     
     @GetMapping("/contact")
     public String contact() {
-        return "contact";
+        return "layout";
     }
 
     // SPA용 JSP 프래그먼트 엔드포인트
@@ -84,9 +84,6 @@ public class HomeController {
             case "en-US": return new Locale("en", "US");
             case "zh-CN": return new Locale("zh", "CN");
             case "ja-JP": return new Locale("ja", "JP");
-            case "th-TH": return new Locale("th", "TH");
-            case "fil-PH": return new Locale("fil", "PH");
-            case "ms-MY": return new Locale("ms", "MY");
             default: return new Locale("ko", "KR");
         }
     }
