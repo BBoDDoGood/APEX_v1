@@ -1,57 +1,136 @@
-/* Main CSS Styles */
-body {
+/* Google Fonts에서 Inria Sans 불러오기 */
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap');
+    html, body, textarea, input, a, p, div, span, h5, h4, h3, h2, h1 {
+        font-family: 'Inria Sans', Arial, sans-serif;
+}
+*{
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f8fafc;
-    color: #374151;
-    line-height: 1.6;
-}
-
-* {
     box-sizing: border-box;
 }
-
-/* Reset styles */
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    padding: 0;
+html, body, textarea, input, a, p, button, div, span, h5, h4, h3, h2, h1{
+    color: #333;
+    word-break: break-all;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
-
-a {
-    text-decoration: none;
-    color: inherit;
+html{
+    width: 100%;
+    font-size: clamp( 12px, 2vw, 16px);
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
-
-ul, ol {
-    margin: 0;
-    padding: 0;
+body.modal-open{
+    overflow: hidden;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+main{
+    position: relative;
+    overflow: hidden;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+/*16px 일 때 3.1em = 50px 2.5em = 40px, 2em = 32px 1.5em = 24px 1.2em = 20px*/
+h1{
+    font-size: 3.1em;
+}
+h2{
+    font-size: 2.5em;
+}
+h3{
+    font-size: 2em;
+}
+h4{
+    font-size: 1.5em;
+}
+h5{
+    font-size: 1.2em;
+    font-weight: 300;
+}
+p{
+    font-size: 1em;
+    color: #555;
+    margin-top: 1.2em;
+}
+button, a, nav, .cursor, .list-con .title-box{
+    cursor: pointer;
+}
+button{
+    font-size: 1.2em;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+@media screen and (max-width:1024px) {
+    button{
+        font-size: 1em;
+    }
+}
+a{
+    direction: none;
+}
+ul,li{
     list-style: none;
 }
 
-/* Container */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+/**/
+.max-contain{
+    position: relative;
+    max-width: 1920px;
+    margin: clamp( 100px, 8vw, 200px) auto 0 auto;
 }
-
-/* Utility classes */
-.text-center {
+.content-con{
+    width: clamp( 320px, 90%, 1600px);
+    margin: 0 auto;
+}
+.sub-section{
+    margin: clamp( 60px, 8vw, 100px) auto 0 auto;
+}
+.flex{
+    display: flex;
+}
+.grid{
+    display: grid;
+}
+.flex, .grid{
+    justify-content: space-between;
+    align-items: center;
+}
+.center *{
     text-align: center;
 }
-
-.mb-4 {
-    margin-bottom: 2rem;
+.right{
+    text-align: right;
+    padding-right: 3em;
+}
+.text-w *{
+    color: #fff;
+}
+.col {
+    flex-direction: column;
 }
 
-.mt-4 {
-    margin-top: 2rem;
-}
 
-/* Responsive */
-@media (max-width: 768px) {
-    .container {
-        padding: 0 15px;
+/**/
+.banner-con{
+    overflow: hidden;
+    width: 100%;
+    margin-top: clamp( 100px, 8vw, 200px);
+    background-color: #ECEFF1;
+}
+.med-v{
+    display: none;
+}
+@media screen and (max-width:1024px) {
+    .header .med-v{
+        display: block;
+    }
+    .header .com-v{
+        display: none;
     }
 }
