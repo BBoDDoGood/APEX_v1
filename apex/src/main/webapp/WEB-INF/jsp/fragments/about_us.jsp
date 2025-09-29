@@ -1,87 +1,102 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<div class="about-content">
-    <div class="about-hero">
-        <h1>About Us</h1>
-        <p>APEX Holdings에 대해 알아보세요</p>
-    </div>
-    
-    <div class="about-section">
-        <h2>회사 소개</h2>
-        <p>APEX Holdings는 혁신적인 비즈니스 솔루션을 제공하는 글로벌 기업입니다. 우리는 고객의 성공을 위해 최선을 다하고 있습니다.</p>
-        
-        <h2>비전</h2>
-        <p>세계 최고의 비즈니스 파트너가 되어 고객과 함께 성장하는 것입니다.</p>
-        
-        <h2>미션</h2>
-        <p>혁신적인 기술과 서비스로 고객의 비즈니스 가치를 극대화합니다.</p>
-    </div>
-</div>
-
-<style>
-.about-content {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.about-hero {
-    text-align: center;
-    padding: 40px 0;
-    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
-    color: white;
-    border-radius: 10px;
-    margin-bottom: 40px;
-}
-
-.about-hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-.about-hero p {
-    font-size: 1.1rem;
-    opacity: 0.9;
-}
-
-.about-section {
-    background: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.about-section h2 {
-    color: #1e40af;
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-    margin-top: 30px;
-}
-
-.about-section h2:first-child {
-    margin-top: 0;
-}
-
-.about-section p {
-    color: #6b7280;
-    line-height: 1.8;
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-}
-
-@media (max-width: 768px) {
-    .about-hero h1 {
-        font-size: 2rem;
-    }
-    
-    .about-section {
-        padding: 20px;
-    }
-    
-    .about-section h2 {
-        font-size: 1.5rem;
-    }
-}
-</style>
+<section class="aboutUs">
+    <section class="bg-color"></section>
+    <section class="max-contain"><!--Core Value - APEX-->
+        <div class="content-con">
+            <section class="title-box">
+                <h1>Core Value - APEX</h1>
+                <p>APEX는 Accelerate, Pioneer, Excellence, X-Factor를 핵심가치로 삼아 혁신 기업의 성장을 가속화하고 글로벌 무대 도약을 지원합니다.</p>
+            </section>
+            <section class="content-box">
+                <div class="value-con grid">
+                    <div class="border-r flex">
+                        <h3><span>A</span>ccelerate & <span>A</span>spire</h3>
+                        <h5>기업 성장의 가속화와 창업자의 도전을 지원</h5>
+                        <p>혁신적인 기업의 성장을 가속화하고, 창업자들이 더 큰 목표를 도전할 수 있도록 지원합니다.</p>
+                    </div>
+                    <div class="border-r flex">
+                        <h3><span>P</span>ioneer & <span>P</span>otential</h3>
+                        <h5>새로운 길의 개척과 잠재력 극대화</h5>
+                        <p>새로운 길을 개척하는 창업자들과 함께하며 그들의 잠재력을 극대화하여 성공적인 기업으로 성장 시킵니다.</p>
+                    </div>
+                    <div class="border-r flex">
+                        <h3><span>E</span>xcellence & <span>E</span>levate</h3>
+                        <h5>기업의 글로벌 성장·도약을 위한 지원</h5>
+                        <p> 기업을 최고 수준으로 성장시키고, 글로벌 무대에서 인정받는 기업으로 도약할 수 있도록 돕습니다.</p>
+                    </div>
+                    <div class="border-r flex">
+                        <h3><span>X</span>-Factor & e<span>X</span>ponential Growth</h3>
+                        <h5>차별화된 경쟁력과 폭발적 성장을 지원</h5>
+                        <p> 차별화된 경쟁력을 가진 기업을 발굴하고, 혁신적인 투자 전략과 네트워크를 통해 기업의 폭발적인 성장을 지원 합니다.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <section class="max-contain"><!--From Vision to APEX-->
+        <div class="content-con">
+            <section class="title-box">
+                <h1>From Vision to <span style="color: #0D47A1;">APEX</span></h1>
+                <p>APEX Holdings는 2025년 설립된 홍콩 FDI 법인으로, 여의도를 거점으로 아시아·태평양 시장을 연결하는 벤처투자 플랫폼입니다.</p>
+            </section>
+            <section class="content-box">
+                <div class="vision flex harf-sec center">
+                    <section class="logo-con border-r">
+                        <div class="img-box">
+                            <img src="../images/logo-APEX-bigger.png" alt="APEX-logo">
+                        </div>
+                        <p>스타트업과 혁신기업을 최고의 자리(APEX)로 이끄는 VC</p>
+                    </section>
+                    <section class="flex">
+                        <div>
+                            <h5>설립연도</h5>
+                            <h5>2025년 1월</h5>
+                        </div>
+                        <div class="gray-bar"></div>
+                        <div>
+                            <h5>법인 형태</h5>
+                            <h5>홍콩 FDI 법인</h5>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </section>
+    <section class="mission max-contain"><!--Vision & Mission-->
+        <div class="content-con">
+            <section class="title-box">
+                <h1>Vision & Mission</h1>
+                <p>AI와 투자를 기반으로 한국의 혁신 스타트업을 글로벌 기업으로 성장시키며, 아시아·태평양 벤처투자 생태계를 선도합니다.</p>
+            </section>
+            <section class="content-box">
+                <div class="harf-sec flex">
+                    <section>
+                        <div class="img-box">
+                            <img src="../images/img-noteBook.png" alt="noteBook">
+                        </div>
+                    </section>
+                    <section class="flex col">
+                        <section>
+                            <h2>Agriculture Innovation</h2>
+                            <p>지속 가능한 성장을 위한 농업 혁신</p>
+                            <p>농업의 생산성과 지속 가능성을 높이기 위해 혁신적인 기술과 데이터를 적용합니다.<br>한국의 혁신 스타트업을 발굴하고 글로벌 시장으로 성장할 수 있도록 지원합니다.</p>
+                        </section>
+                        <section>
+                            <h2>Trusted Investment</h2>
+                            <p>투명하고 신뢰할 수 있는 투자</p>
+                            <p>성장 단계에 맞는 전략적 투자를 통해 기업의 안정적 성장을 돕습니다.<br>투자 과정의 투명성을 기반으로 신뢰할 수 있는 파트너십을 구축합니다.</p>
+                        </section>
+                        <section>
+                            <h2>Global AI Partnership</h2>
+                            <p>AI 기반 글로벌 파트너십 확장</p>
+                            <p>인공지능 기술을 활용한 글로벌 네트워크를 강화하고 있습니다.<br>>아시아·태평양 벤처투자 생태계를 선도하며 기업의 해외 진출을 지원합니다.</p>
+                        </section>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </section>
+    <section class="max-contain"></section>
+</section>
